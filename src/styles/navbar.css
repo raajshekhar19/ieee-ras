@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.navcontainer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    opacity: 95%;
+    margin: .1rem;
+    padding: 0.5rem 1rem;
+    height: 5rem;
+    width: 100vw;
+    border-radius: .4rem;
+    border: 2px solid aqua;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo-header {
+    height: 4rem;
+    width: 9rem;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-header-IEEERAS {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: rgb(63, 7, 16);
+    margin-left: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links a {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    background-color: rgb(178, 117, 204);
+    padding: 1rem;
+    box-shadow: rgba(217, 66, 255, 0.17) 0px -23px 25px 0px inset, rgba(232, 56, 255, 0.15) 0px -36px 30px 0px inset, rgba(213, 73, 255, 0.1) 0px -79px 40px 0px inset, rgba(252, 82, 255, 0.06) 0px 2px 1px, rgba(255, 89, 252, 0.09) 0px 4px 2px, rgba(252, 81, 255, 0.09) 0px 8px 4px, rgba(255, 94, 252, 0.09) 0px 16px 8px, rgba(218, 69, 255, 0.09) 0px 32px 16px;
+    
+}
+.navbar-links a:hover{
+    box-shadow: rgba(5, 223, 252, 0.17) 0px -23px 25px 0px inset, rgba(8, 189, 250, 0.15) 0px -36px 30px 0px inset, rgba(6, 170, 235, 0.1) 0px -79px 40px 0px inset, rgba(26, 197, 213, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(4, 255, 242, 0.09) 0px 32px 16px;
+    transition: all .5s;
+    border: .0015px solid aqua;
+    color: aquamarine;
+
+}
+
+.navbar-mobile {
+    position: relative;
+}
+
+.menu-btn {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(26, 223, 253);
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    
+    .nav-header-IEEERAS {
+        font-size: 1.5rem;
+    }
+    
+    .nav-logo-header {
+        height: 3rem;
+        width: 6rem;
+    }
+    .sliced-corner{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+.sliced-corner {
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    height: 6rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    margin-right: .5REM;
+    background-color: aqua;
+    position: relative;
+    clip-path: polygon(
+        20px 0,
+        calc(100% - 20px) 0,
+        100% 20px,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        20px 100%,
+        0 calc(100% - 20px),
+        0 20px
+    );
+}
+.sliced-corner::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: black;
+    clip-path: polygon(
+        18px 0,
+        calc(100% - 18px) 0,
+        100% 18px,
+        100% calc(100% - 18px),
+        calc(100% - 18px) 100%,
+        18px 100%,
+        0 calc(100% - 18px),
+        0 18px
+    );
+}
+.button {
+    width: rem;
+    height: 3.5rem;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: aqua;
+    clip-path: polygon(
+        10px 0,
+        calc(100% - 10px) 0,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0 calc(100% - 10px),
+        0 10px
+    );
+    box-shadow: 0 4px 6px rgba(0, 255, 255, 0.3);
+}
+.button-inner {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    clip-path: polygon(
+        8px 0,
+        calc(100% - 8px) 0,
+        100% 8px,
+        100% calc(100% - 8px),
+        calc(100% - 8px) 100%,
+        8px 100%,
+        0 calc(100% - 8px),
+        0 8px
+    );
+}
+.button:hover {
+    transform: translateY(-3px);
+    background-color: rgb(39, 128, 128);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+}
+.button-inner:hover{
+    background-color: rgb(0, 208, 255);
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 255, 255, 0.5);
+}
+
+.to-row{
+    display: flex;
+}

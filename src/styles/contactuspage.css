@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.contact-us-page{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.contact-heading{
+    font-size: 3rem;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-top: 2rem;
+    min-width: 40vw;
+    text-align: center;
+    background-color: black;
+    color: #b255cf;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.form-to-contact{
+    display: flex;
+    align-items: center;
+    align-self:center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    background-color: #000000;
+    max-width: 90%;
+    padding: 2rem;
+    border-radius: 2rem;
+    color: white;
+    height: auto;
+}
+.namepad{
+    font-size: 2rem;
+    background-color: #b255cf;
+    padding: .7rem;
+    border-radius: 1rem; 
+    color: #000000;
+
+}
+.tag-class-contact{
+    font-weight: 700;
+    color: black;
+    margin-right: .5rem;
+}
+.for-name{
+    margin: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-input{
+    border-radius: .5rem;
+    background-color: #f0ccfb;
+    font-size: 2rem;
+}
+.send-to-contact{
+    background-color: #000000;
+    padding: .5rem;
+    border-radius: 1rem;
+    color: #b255cf;
+    align-self:flex-end;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.for-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.send-to-contact:hover{
+    border: 2px solid white;
+}

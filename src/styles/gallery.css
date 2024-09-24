@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 5;
+}
+.gallery-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* changing to auto*/
+}
+
+.our-gallery{
+    align-self: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: black;
+    color: #dbaaea;
+    font-size: 3rem;
+    min-width: 70vw;
+    font-weight: 700;
+    border-radius: 2rem;
+    border: 2px solid;
+}

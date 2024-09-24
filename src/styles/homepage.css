@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+.home-page{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+   
+}
+.welcoming-home{
+    padding: 1rem;
+    width: 50vw;
+    background-color: #101010;
+    opacity: 90%;
+    align-self: center;
+    text-align: center;
+    color: #dbaaea;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-right: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.vedio-container-homepage{
+    height: 60vh;
+    width: 90vw;
+    align-self: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: #b358cf;
+
+}
+.hero-about-homepage{
+    height: auto;
+    width: 70vw;
+    border-radius: 1rem;
+    background-color: #000000;
+    color: #dbaaea;
+    margin-top: 4rem;
+    align-self:center;
+    margin-right: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.blacky{
+    color: #ffa968;
+    font-family: sans-serif;
+    font-weight: 800;
+}
