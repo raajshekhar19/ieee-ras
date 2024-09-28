@@ -1,0 +1,112 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.our-moments-container {
+    width: 100%;
+    max-width:40rem;
+    aspect-ratio: 16 / 9;
+    background-color: rgba(0, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.our-moments-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.our-moments-content::before,
+.our-moments-content::after {
+    content: "";
+    position: absolute;
+    background-color: #0ff;
+    z-index: -1;
+}
+.our-moments-content::before {
+    top: 0;
+    left: 0;
+    right: 20px;
+    height: 2px;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+.our-moments-content::after {
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    height: 2px;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+h2 {
+    font-size: 4.5rem;
+    text-align: center;
+    color: #0ff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(45deg, transparent 10px, rgba(0, 255, 255, 0.1) 10px) bottom left,
+                linear-gradient(-45deg, transparent 10px, rgba(0, 255, 255, 0.1) 10px) bottom right;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+}
+.corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ff;
+    z-index: 3;
+}
+.corner-tl {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+.corner-tr {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+.corner-bl {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+.corner-br {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+.pulse {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #0ff;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+.pulse-1 { top: 10%; left: 5%; }
+.pulse-2 { top: 20%; right: 8%; animation-delay: 0.5s; }
+.pulse-3 { bottom: 15%; left: 7%; animation-delay: 1s; }
+.pulse-4 { bottom: 25%; right: 6%; animation-delay: 1.5s; }

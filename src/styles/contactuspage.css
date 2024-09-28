@@ -83,3 +83,10 @@
 .send-to-contact:hover{
     border: 2px solid white;
 }
+
+.centry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}

@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 import {AnimatedCircuitBackground} from "../components/AnimatedCircuitBackground/index"
 import {GradientCircuitBoardBackground} from "../components/GradientCircuitBoardBackground/index"
 import "../styles/gallery.css";
-
+import { OurMoments } from "../components/OurMoments";
 
 const Gallery = () => {
   return(
@@ -13,7 +13,7 @@ const Gallery = () => {
     <div className="gallery-page">
       <Navbar/>
       <div className="our-gallery">
-      Our Moments
+      <OurMoments title="OUR MOMENTS" />
       </div>
       <Footer/>
     </div>

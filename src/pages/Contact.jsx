@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import {AnimatedCircuitBackground} from "../components/AnimatedCircuitBackground/index"
 import {GradientCircuitBoardBackground} from "../components/GradientCircuitBoardBackground/index"
 import "../styles/contactuspage.css";
+import { OurMoments } from "../components/OurMoments";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,9 @@ const Contact = () => {
     <AnimatedCircuitBackground/>
     <div className="contact-us-page">
       <Navbar />
-      <h2 className="contact-heading">Contact Us</h2>
+      <div className="centry">
+      <OurMoments title ="contact us"/>
+      </div>
       <form className="form-to-contact" onSubmit={handleSubmit}>
         <div className="namepad">
           <div className="for-name">

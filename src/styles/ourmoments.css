@@ -1,0 +1,173 @@
+.our-moments__container {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    background-color: rgba(154, 237, 237, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: expandHeight 1.5s ease forwards;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    /* Enable vertical scrolling within the component if needed */
+
+}
+
+@keyframes expandHeight {
+    0% {
+        max-height: 2px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        max-height: 30vh;
+        opacity: 1;
+    }
+}
+
+.our-moments__content {
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.our-moments__title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(100, 254, 254);
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+    margin: 0;
+    padding: 20px;
+    /*background: linear-gradient(45deg, transparent 10px, rgba(0, 255, 255, 0.1) 10px) bottom left,
+                linear-gradient(-45deg, transparent 10px, rgba(0, 255, 255, 0.1) 10px) bottom right;
+    */background-size: 51% 100%;
+    
+    border: 1px ;
+    background-repeat: no-repeat;
+}
+
+/* Updated this section to avoid extra lines */
+.our-moments__content::before,
+.our-moments__content::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 255, 238);
+    z-index: -1;
+}
+
+.our-moments__content::before {
+    top: 0;
+    left: 0;
+    right: 20px;
+    height: 2px;
+    box-shadow: 0 0 10px rgb(161, 255, 186), 0 0 20px rgb(147, 255, 255);
+}
+
+.our-moments__content::after {
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    height: 2px;
+    box-shadow: 0 0 10px rgb(162, 255, 158), 0 0 20px rgb(92, 211, 255);
+}
+
+.our-moments__corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(103, 255, 240);
+    z-index: 3;
+}
+
+.our-moments__corner--tl {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.our-moments__corner--tr {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.our-moments__corner--bl {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+
+.our-moments__corner--br {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.our-moments__pulse {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(17, 215, 225);
+    border-radius: 50%;
+    animation: our-moments__pulse-animation 2s infinite;
+}
+
+.our-moments__pulse--1 {
+    top: 10%;
+    left: 5%;
+}
+
+.our-moments__pulse--2 {
+    top: 20%;
+    right: 8%;
+    animation-delay: 0.5s;
+}
+
+.our-moments__pulse--3 {
+    bottom: 15%;
+    left: 7%;
+    animation-delay: 1s;
+}
+
+.our-moments__pulse--4 {
+    bottom: 25%;
+    right: 6%;
+    animation-delay: 1.5s;
+}
+
+@keyframes our-moments__pulse-animation {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}

@@ -5,6 +5,7 @@ import {AnimatedCircuitBackground} from "../components/AnimatedCircuitBackground
 import {GradientCircuitBoardBackground} from "../components/GradientCircuitBoardBackground/index"
 /* import {EventCard} from "../components/EventCard/index" */
 import "../styles/events.css";
+import { OurMoments } from "../components/OurMoments";
 const Events = () => {
   return (
     <>
@@ -12,7 +13,8 @@ const Events = () => {
     <div className="events-page">
       <Navbar />
       <div className="upcoming-events">
-        <h1 className="heading-events">upcoming events</h1>
+          <OurMoments title="upcoming events"/>
+          
         <div className="for-upcoming-events">
           <h1 className="initial-text">
             hover to reveal
@@ -21,7 +23,7 @@ const Events = () => {
         </div>
       </div>
       <div className="upcoming-events">
-        <h1 className="heading-events">past events</h1>
+      <OurMoments title="past events"/>
       </div>
       <Footer />
     </div>

@@ -14,7 +14,7 @@
     font-size: 2.3rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
-    color: #dbaaea;
+    color: #59cbe2;
     margin-bottom: 1rem;
     border-bottom: 1px solid ;
 }
@@ -43,11 +43,13 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    background-color: #000000;
-    color: #dbaaea;
+    background-color: transparent;
+    color: #aad4ea;
     height: auto;
     margin-bottom: 2rem;
     margin-top: 1rem;
+    padding: 3.5rem;
+    background-color: black;
     padding: 2rem;
     width: 60vw;
     border-radius: 2rem;
@@ -70,3 +72,9 @@
     border: 1.8px solid #f5ddfd;
 }
   
+.rotsq{
+    background-color: #00d5ff;
+}
+.aquaaa{
+    color:#00d5ff ;
+}

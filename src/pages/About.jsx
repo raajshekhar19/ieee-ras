@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import {AnimatedCircuitBackground} from "../components/AnimatedCircuitBackground/index"
 import {GradientCircuitBoardBackground} from "../components/GradientCircuitBoardBackground/index"
 import "../styles/aboutpage.css";
+import { OurMoments } from "../components/OurMoments";
 
 export const About = () => {
   return (
@@ -41,28 +42,28 @@ export const About = () => {
         </p>
         <ul>
           <li className="ltmargin" >
-            <span className="w-3 h-3  bg-fuchsia-400 ml-1 inline-block transform rotate-45"></span>{" "}
-            <strong className="text-fuchsia-300">Workshops : </strong> We
+            <span className="w-3 h-3 rotsq ml-1 inline-block transform rotate-45"></span>{" "}
+            <strong className="aquaaa">Workshops : </strong> We
             organize hands-on workshops on robotics, automation, and related
             technologies, providing students with the opportunity to work with
             advanced tools and systems.
           </li>
           <li className="ltmargin">
-            <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}
-            <strong className="text-fuchsia-300">Mentorship Programs :</strong>{" "}
+            <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}
+            <strong className="aquaaa">Mentorship Programs :</strong>{" "}
             Our experienced members and faculty advisors mentor students,
             guiding them in their robotics projects, research, and skill
             development.
           </li>
           <li className="ltmargin">
-            <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}
-            <strong className="text-fuchsia-300">Robo-thons : </strong> We host
+            <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}
+            <strong className="aquaaa">Robo-thons : </strong> We host
             competitive robotics challenges that encourage innovation, teamwork,
             and problem-solving.
           </li>
           <li className="ltmargin">
-            <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}
-            <strong className="text-fuchsia-300">
+            <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}
+            <strong className="aquaaa">
               Research Paper Discussions :{" "}
             </strong>{" "}
             Engaging sessions where students discuss the latest research in
@@ -70,8 +71,8 @@ export const About = () => {
             collaboration.
           </li>
           <li className="ltmargin">
-            <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}
-            <strong className="text-fuchsia-300">Ideathons : </strong>{" "}
+            <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}
+            <strong className="aquaaa">Ideathons : </strong>{" "}
             Creativity-focused events where participants brainstorm and develop
             innovative ideas in robotics and automation.
           </li>
@@ -81,15 +82,15 @@ export const About = () => {
         <h1 className="mission-heading">Membership Benefits</h1>
         <p>Joining IEEE RAS MUJ offers numerous benefits for students:</p>
         <ul>
-          <li className="ltmargin"> <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}Opportunities to participate in national and international competitions.</li>
-          <li className="ltmargin"> <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}Networking with professionals in the field of robotics.</li>
-          <li className="ltmargin"> <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}Access to resources such as journals, publications, and technical papers.</li>
-          <li className="ltmargin"> <span className="w-3 h-3 bg-fuchsia-400 inline-block ml-1 transform rotate-45"></span>{" "}Participation in community service initiatives related to technology education.</li>
+          <li className="ltmargin"> <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}Opportunities to participate in national and international competitions.</li>
+          <li className="ltmargin"> <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}Networking with professionals in the field of robotics.</li>
+          <li className="ltmargin"> <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}Access to resources such as journals, publications, and technical papers.</li>
+          <li className="ltmargin"> <span className="w-3 h-3 rotsq inline-block ml-1 transform rotate-45"></span>{" "}Participation in community service initiatives related to technology education.</li>
         </ul>
       </div>
 
         <div className="our-team">
-          <h1 className="our-team-heading" >Meet Our Team</h1>
+          <OurMoments title="MEET OUR TEAM"/>
         </div>
 
     <Footer/>

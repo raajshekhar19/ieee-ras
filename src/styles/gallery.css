@@ -11,15 +11,16 @@
 }
 
 .our-gallery{
+    display: flex;
+    justify-content: center;
     align-self: center;
     text-align: center;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 2.5rem;
     background-color: black;
     color: #dbaaea;
     font-size: 3rem;
     min-width: 70vw;
     font-weight: 700;
-    border-radius: 2rem;
-    border: 2px solid;
+
 }
