@@ -10,9 +10,10 @@
    
 }
 .welcoming-home{
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50vw;
-    background-color: #101010;
     opacity: 90%;
     align-self: center;
     text-align: center;
@@ -22,7 +23,7 @@
     margin-right: 5rem;
     font-size: 2.5rem;
     font-weight: 700;
-    border-radius: 1rem;
+
 }
 .vedio-container-homepage{
     height: 60vh;
@@ -38,7 +39,7 @@
     width: 70vw;
     border-radius: 1rem;
     background-color: #000000;
-    color: #dbaaea;
+    color: #ffffff;
     margin-top: 4rem;
     align-self:center;
     margin-right: 2rem;
