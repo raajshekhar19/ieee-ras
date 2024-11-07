@@ -6,6 +6,7 @@ import About from './pages/About';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery'
+import Login from './pages/Login'
 import Sidebar from '../src/components/Slidebar';
 import '../src/styles/Slidebar.css'
 import './App.css';
@@ -38,6 +39,7 @@ requestAnimationFrame(raf)
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </main>
       </div>

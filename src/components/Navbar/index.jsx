@@ -7,12 +7,12 @@ import "../../styles/Slidebar.css";
 
 export const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 768);
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 835);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsWideScreen(window.innerWidth > 768);
-      if (window.innerWidth > 768) {
+      setIsWideScreen(window.innerWidth > 835);
+      if (window.innerWidth > 835) {
         setIsSidebarOpen(false);
       }
     };
@@ -27,63 +27,64 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="sliced-corner">
-        <header className="nav-header">
+        {!isWideScreen && (
+          
+          <div className="forsmall">
+          <header className="nav-header">
           <Link to="/">
             <img className="nav-logo-header" src={logo} alt="logo" />
           </Link>
-          {!isWideScreen && (
-            <button onClick={toggleSidebar} className="menu-btn">
-              ☰
-            </button>
-          )}
         </header>
-
-        {isWideScreen ? (
+          <button onClick={toggleSidebar} className="menu-btn">
+            ☰
+          </button>
+          </div>
+        )}
+      {isWideScreen ? (
+        <div className="sliced-corner">
+          <header className="nav-header">
+            <Link to="/">
+              <img className="nav-logo-header" src={logo} alt="logo" />
+            </Link>
+          </header>
           <nav className="to-row">
             <Link to="/">
-            <div className="button">
-              <div className="button-inner">
-              Home
+              <div className="button-n">
+                <div className="button-inner">Home</div>
               </div>
-            </div>
             </Link>
             <Link to="/about">
-            <div className="button">
-              <div className="button-inner">
-                About
+              <div className="button-n">
+                <div className="button-inner">About</div>
               </div>
-            </div>
             </Link>
             <Link to="/events">
-            <div className="button">
-              <div className="button-inner">
-                Events
+              <div className="button-n">
+                <div className="button-inner">Events</div>
               </div>
-            </div>
             </Link>
             <Link to="/gallery">
-            <div className="button">
-              <div className="button-inner">
-               Gallery
+              <div className="button-n">
+                <div className="button-inner">Gallery</div>
               </div>
-            </div>
             </Link>
             <Link to="/contact">
-            <div className="button">
-              <div className="button-inner">
-                Contact
+              <div className="button-n">
+                <div className="button-inner">Contact</div>
               </div>
-            </div>
+            </Link>
+            <Link to="/login">
+              <div className="button-n">
+                <div className="button-inner">Login</div>
+              </div>
             </Link>
           </nav>
-        ) : (
-          <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-        )}
-      </div>
+        </div>
+      ) : (
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      )}
     </>
   );
 };
 
 export default Navbar;
-

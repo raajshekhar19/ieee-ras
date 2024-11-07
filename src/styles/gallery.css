@@ -7,7 +7,7 @@
 .gallery-page{
     display: flex;
     flex-direction: column;
-    height: 100vh; /* changing to auto*/
+    height: auto; /* changing to auto*/
 }
 
 .our-gallery{

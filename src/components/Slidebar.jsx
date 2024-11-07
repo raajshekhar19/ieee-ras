@@ -12,6 +12,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <Link to="/events" onClick={toggleSidebar}>Events</Link>
         <Link to="/gallery" onClick={toggleSidebar}>Gallery</Link>
         <Link to="/contact" onClick={toggleSidebar}>Contact</Link>
+        <Link to="/login" onClick={toggleSidebar}>Login</Link>
       </nav>
     </div>
   );
